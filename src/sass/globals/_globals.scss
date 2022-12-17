@@ -1,0 +1,26 @@
+@use 'variables' as v;
+@use "mixins" as m;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Manrope', sans-serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.container{
+    max-width: 100rem;
+    width: 95%;
+    margin: 15rem auto 0 auto;
+    @include m.escritorio {
+        max-width: 70rem;
+    }
+}
